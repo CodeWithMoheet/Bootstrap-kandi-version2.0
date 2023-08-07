@@ -13,24 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=inter">
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .hover-effect:hover {
-        color: blueviolet;
-    }
-
-    input.form-control.p-3.shadow-lg {
-        /* Internet Explorer 10-11 */
-        -webkit-text-fill-color: #0d0e0d;
-        text-size-adjust: 22px;
-    }
-</style>
 
 <body>
 
@@ -51,9 +35,22 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-2 py-2   col-sm-3 col-12 text-center">
-            <button class="btn hover-effect" type="submit">Sign In</button>
-            <button class="btn btn-outline-dark  hover-effect" type="submit">Sign Up</button>
+        <!-- buttno -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>  collapse navbar-collapse" id="navbarSupportedContent" id="navbarNav
+        </button> -->
+        <!-- buttno -->
+        <div class="col-lg-2 py-2  navbar-expand-lg ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="btn hover-effect" type="submit">Sign In</button>
+                <button class="btn btn-outline-dark  hover-effect" type="submit">Sign Up</button>
+            </div>
         </div>
     </nav>
     <nav class="navbar p-0 navbar-light ">
@@ -67,22 +64,19 @@
         </div>
     </nav>
 
+
     <!-- MAIN SECTION -->
 
-    <div class="container d-flex align-items-center flex-column  text-center fs-1 py-3 pt-5 pb-5 "
-        style="height: 65vh;">
-        <div class="container" style="padding-top: 85px;">
-            <h1 class="text fs-1 " style="margin: -10px;"> <b>Jumpstart</b> your</h1>
-            <div style="font-weight: 500;">Application Development</div>
+    <div class="container d-flex align-items-center flex-column  text-center fs-1 py-3 pt-5 pb-5 main">
+        <div class="container  sub-main">
+            <h1 class="text fs-1 Jumpstart"> <b>Jumpstart</b> your</h1>
+            <div class="Application">Application Development</div>
             <div class="input-group w-100  m-2  d-flex justify-content-center pt-4  ">
-                <div class="  b-5 ; " style="width: 800px;     border: 1px solid #8690a2; border-radius:5px; ;"><i
-                        class="fa-solid fa-magnifying-glass fa-2xs"
-                        style="color: #8690a2;position: absolute;bottom: 27px; left: 106px;"></i>
+                <div class="Search  b-5"><i class="fa-solid fa-magnifying-glass fa-2xs"></i>
                     <input class="form-control p-3 shadow-lg " style="font-size: 19px; border: 22px ;" type="text"
                         placeholder="       START HERE - Search for Functions,Code,Sinppets,Libraries,Kits">
                 </div>
-                <div class="input-group-text  shadow-lg px-4"
-                    style="border-top-right-radius: 13px;border-bottom-right-radius: 13px;background-color:#ff2052 ; ">
+                <div class="input-group-text  shadow-lg px-4 search-button">
                     <button class="btn text-light" type="submit"><b>Find</b></button>
                 </div>
 
@@ -90,7 +84,7 @@
         </div>
     </div>
     <!-- ANIMATION SECTION -->
-    <div class="container  p-4" style="height: 100vh; width: 100%;">
+    <div class="container  p-4 Animation">
         <div class="container text-center fs-4 pb-5 ">
             <h2 class="text fs-3 pb-2">Develop Functions Faster</h2>
             <p class="fs-5 pt-1">Reusing Code and Libraries</p>
@@ -115,88 +109,77 @@
                     </div>
                 </div>
             </div>
-            <div class="container d-flex justify-content-end pb-5" style="position: absolute; left: -45px;top: 700px;">
+            <div class="container d-flex justify-content-end pb-5 screenshort">
                 <img src="Screenshot (82).png" width="500px">
             </div>
         </div>
     </div>
 
     <!-- BOXE-1 -->
-    <div class="boxes  d-flex  justify-content-center" style="height: 600px; width: 444; ">
-        <div class="list border d-flex align-items-center  flex-column "
-            style=" background-color: #eceded; width:35%;height: 92vh; border-radius: 10px;margin-right: 18px; ">
-            <h5 class="text-center pt-5 pb-3">Check out Custom Functions <br> others have Developed</h5>
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 64px; width: 400px;border-top-right-radius: 5px; border-bottom-right-radius: 5px">
-                <div class="box  bg-dark "
-                    style="height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+    <div class="boxes  d-flex  justify-content-center">
+        <div class="list border d-flex align-items-center  flex-column sub-box ">
+            <h5 class="text-center pt-5 pb-4">Check out Custom Functions <br> others have Developed</h5>
+            <div class="rectangle d-flex border bg-white mb-3">
+                <div class="box1">
                     <div class="item1 d-flex justify-content-center py-3">
                         <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
                     </div>
-                    <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                 </div>
                 <div class="content ">
-                    <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an image
+                    <div class="m-2 contentt"> How to blur an image
                         in OpenCV <br> Python</div>
                 </div>
             </div>
             <!--  column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 64px; width: 400px;border-top-right-radius: 5px; border-bottom-right-radius: 5px">
-                <div class="box  bg-dark "
-                    style="height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="rectangle d-flex border bg-white mb-3">
+                <div class="box1">
                     <div class="item1 d-flex justify-content-center py-3">
-                        <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                        <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                     </div>
                 </div>
                 <div class="content">
-                    <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an image
+                    <div class="m-2 contentt"> How to blur an image
                         in OpenCV <br> Python</div>
                 </div>
             </div>
             <!--  column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 64px; width: 400px;border-top-right-radius: 5px; border-bottom-right-radius: 5px">
-                <div class="box  bg-dark "
-                    style="height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="rectangle d-flex border bg-white mb-3">
+                <div class="box1">
                     <div class="item1 d-flex justify-content-center py-3">
-                        <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                        <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
 
                     </div>
                 </div>
                 <div class="content ">
-                    <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an image
+                    <div class="m-2 contentt"> How to blur an image
                         in OpenCV <br> Python</div>
                 </div>
             </div>
             <!--  column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 64px; width: 400px;border-top-right-radius: 5px; border-bottom-right-radius: 5px">
-                <div class="box  bg-dark "
-                    style="height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="rectangle d-flex border bg-white mb-3">
+                <div class="box1">
                     <div class="item1 d-flex justify-content-center py-3">
-                        <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                        <div class="img"><img src="ArtificialIntelligencenew.svg" alt="" width="40px" height="40px">
+                        </div>
 
                     </div>
                 </div>
                 <div class="content ">
-                    <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an image
+                    <div class="m-2 contentt"> How to blur an image
                         in OpenCV <br> Python</div>
                 </div>
             </div>
             <!-- column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 64px; width: 400px;border-top-right-radius: 5px; border-bottom-right-radius: 5px">
-                <div class="box  bg-dark "
-                    style="height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="rectangle d-flex border bg-white mb-3">
+                <div class="box1">
                     <div class="item1 d-flex justify-content-center py-3">
-                        <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                        <div class="img"><img src="blockchain.svg" alt="" width="40px" height="40px"></div>
 
                     </div>
                 </div>
                 <div class="content ">
-                    <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur an
+                    <div class="m-2 contentt"> How to blur an
                         image in OpenCV <br> Python</div>
                 </div>
             </div>
@@ -204,83 +187,76 @@
 
         <!-- BOXE-2 -->
 
-        <div class="list border d-flex align-items-center  flex-column pt-1 "
-            style=" background-color: #eceded; width:35%;height: 92vh; border-radius: 10px;margin-left: 18px; ">
-            <h5 class="text-center pt-5 pb-3">Look up these Popular Functions and try Developing Custom Functions</h5>
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 49px; width: 400px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;padding: 11.2px ;">
-                <div class="box   " style="height: 49px; width: 64px; ">
+        <div class="list border d-flex align-items-center  flex-column pt-1 boxess ">
+            <h5 class="text-center pt-5 pb-4">Look up these Popular Functions and try Developing Custom Functions</h5>
+            <div class="rectangle-2 d-flex border bg-white mb-3">
+                <div class="box2 ">
                     <div class="item1 d-flex justify-content-start">
                         <div class="img  img-bg-light"><img src="search.png" alt="" width="25px" height="25px"></div>
                     </div>
                 </div>
                 <div class="content  ">
-                    <div class=" cc fs-6" style="margin-left: -30px;color:#505254;font-weight: 500;"> Create Word Cloud
+                    <div class="cc"> Create Word Cloud
                         from CSV</div>
                 </div>
             </div>
             <!-- column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 49px; width: 400px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;padding: 11.2px ;">
-                <div class="box   " style="height: 49px; width: 64px; ">
+            <div class="rectangle-2 d-flex border bg-white mb-3">
+                <div class="box2 ">
                     <div class="item1 d-flex justify-content-start">
                         <div class="img"><img src="search.png" alt="" width="25px" height="25px"></div>
                     </div>
                 </div>
                 <div class="content  ">
-                    <div class=" cc  " style="margin-left: -30px; color:#505254;font-weight: 500;"> Create Word Cloud
+                    <div class="cc"> Create Word Cloud
                         from CSV</div>
                 </div>
             </div>
             <!-- column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 49px; width: 400px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;padding: 11.2px ;">
-                <div class="box   " style="height: 49px; width: 64px; ">
+            <div class="rectangle-2 d-flex border bg-white mb-3">
+                <div class="box2 ">
                     <div class="item1 d-flex justify-content-start">
                         <div class="img"><img src="search.png" alt="" width="25px" height="25px"></div>
                     </div>
                 </div>
                 <div class="content  ">
-                    <div class=" cc  " style="margin-left: -30px;color:#505254;font-weight: 500;"> Create Word Cloud
+                    <div class="cc"> Create Word Cloud
                         from CSV</div>
                 </div>
             </div>
             <!-- column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 49px; width: 400px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;padding: 11.2px ;">
-                <div class="box   " style="height: 49px; width: 64px; ">
+            <div class="rectangle-2 d-flex border bg-white mb-3">
+                <div class="box2 ">
                     <div class="item1 d-flex justify-content-start">
                         <div class="img"><img src="search.png" alt="" width="25px" height="25px"></div>
                     </div>
                 </div>
                 <div class="content  ">
-                    <div class=" cc  " style="margin-left: -30px;color:#505254;font-weight: 500;"> Create Word Cloud
+                    <div class="cc"> Create Word Cloud
                         from CSV</div>
                 </div>
             </div>
             <!-- column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 49px; width: 400px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;padding: 11.2px ;">
-                <div class="box   " style="height: 49px; width: 64px; ">
+            <div class="rectangle-2 d-flex border bg-white mb-3">
+                <div class="box2 ">
                     <div class="item1 d-flex justify-content-start">
                         <div class="img"><img src="search.png" alt="" width="25px" height="25px"></div>
                     </div>
                 </div>
                 <div class="content  ">
-                    <div class=" cc  " style="margin-left: -30px;color:#505254;font-weight: 500;"> Create Word Cloud
+                    <div class=" cc  "> Create Word Cloud
                         from CSV</div>
                 </div>
             </div>
             <!-- column -->
-            <div class="rect d-flex border bg-white mb-3"
-                style="height: 49px; width: 400px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;padding: 11.2px ;">
-                <div class="box   " style="height: 49px; width: 64px; ">
+            <div class="rectangle-2 d-flex border bg-white mb-3">
+                <div class="box2 ">
                     <div class="item1 d-flex justify-content-start">
                         <div class="img"><img src="search.png" alt="" width="25px" height="25px"></div>
                     </div>
                 </div>
                 <div class="content  ">
-                    <div class=" cc  " style="margin-left: -30px;color:#505254;font-weight: 500;"> Create Word Cloud
+                    <div class="cc"> Create Word Cloud
                         from CSV</div>
                 </div>
             </div>
@@ -304,30 +280,28 @@
             <div class=" col-lg-2 fs-6 p-3"><img src="shareHm.svg" alt="">
                 <div class="list fs-4"><b>Short list</b></div>Multiple Filter Choices
             </div>
-            <div class=" mt-4"> <button class="btn m-2 text-white p-2 px-3 fw-bold rounded-pill "
-                    style="background-color: #6610f2;" type="submit">Learn
+            <div class=" mt-4 "> <button class="btn m-2 text-white p-2 px-3 fw-bold rounded-pill purples"
+                    type="submit">Learn
                     more <i class="bi bi-arrow-right ms-3 "></i></button></div>
-
-
         </div>
     </div>
 
 
     <div class="container text-center fs-5 pt-5 ">
-        <div class="text fs-3 fw-bold pb-2" style="font-weight: 500;">Develop Projects with Kits</div>
+        <div class="text fs-3 fw-bold pb-2  Develop">Develop Projects with Kits</div>
         <div class="text pb-3"> Installers, Solutions, Guides</div>
     </div>
 
+
+
     <!-- CONTENT -->
-    <div class="boxes  d-flex   " style="height: 500px; width: 444; ">
-        <!-- heading        -->
-        <div class="list  d-flex align-items-center  flex-column pt-1 "
-            style=" background-color:white; width:35%;height: 92vh; border-radius: 10px;margin-left: 55px; ">
+    <div class="boxes  d-flex boxes-new">
+        <!-- heading -->
+        <div class="list  d-flex align-items-center  flex-column pt-1 kits">
             <h4 class="text-center  "><img src="consumergoods.svg" class="m-3" width="50px" height="50px" alt="">kandi
                 1-click kits</h4>
-            <div class="rect d-flex   mb-3"
-                style="height: 49px; width: 460px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; ;">
-                <div class="box" style="height: 49px; padding-left: 120px;font-weight: 500; ">enable you to implement,
+            <div class="rectangle-3 d-flex mb-3">
+                <div class="box3 ">enable you to implement,
                     customize and
                     share your incredible Projects in minutes
                     <div class="itemss" style="margin-left: -20px;">
@@ -347,67 +321,58 @@
                 </div>
             </div>
             <!-- python -->
-            <div class="list  d-flex  flex-column "
-                style=" width:100%;height: 100vh; border-radius: 10px;margin-right: 18px;position: relative;left: 600px; top: -65px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="list  d-flex  flex-column python">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
                         </div>
                         <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Innovation.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
+                        <div class="m-2 contentt"> How to blur
                             an
                             image in OpenCV <br> Python</div>
                     </div>
@@ -419,16 +384,15 @@
 
         </div>
     </div>
+
     <!-- CONTENT -->
-    <div class="boxes  d-flex   " style="height: 500px; width: 444; ">
-        <!-- heading        -->
-        <div class="list  d-flex align-items-center  flex-column pt-1 "
-            style=" background-color:white; width:35%;height: 92vh; border-radius: 10px;margin-left: 55px; ">
+    <div class="boxes  d-flex boxes-new">
+        <!-- heading -->
+        <div class="list  d-flex align-items-center  flex-column pt-1 kits">
             <h4 class="text-center  "><img src="consumergoods.svg" class="m-3" width="50px" height="50px" alt="">kandi
                 1-click kits</h4>
-            <div class="rect d-flex   mb-3"
-                style="height: 49px; width: 460px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; ;">
-                <div class="box" style="height: 49px; padding-left: 120px;font-weight: 500; ">enable you to implement,
+            <div class="rectangle-3 d-flex mb-3">
+                <div class="box3 ">enable you to implement,
                     customize and
                     share your incredible Projects in minutes
                     <div class="itemss" style="margin-left: -20px;">
@@ -448,93 +412,78 @@
                 </div>
             </div>
             <!-- python -->
-            <div class="list  d-flex  flex-column "
-                style=" width:100%;height: 100vh; border-radius: 10px;margin-right: 18px;position: relative;left: 600px; top: -65px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="list  d-flex  flex-column python">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
                         </div>
                         <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Innovation.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
+                        <div class="m-2 contentt"> How to blur
                             an
                             image in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 275px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button></div>
-
-
-
+                        style=" font-weight: 400;   padding:8px 15px; position: relative;left: 275px; border-radius: 22px;">Explore
+                        All 1-Click kits <i class="bi bi-arrow-right"></i></button></div>
             </div>
 
-
         </div>
-
     </div>
+
     <!-- CONTENT -->
-    <div class="boxes  d-flex   " style="height: 500px; width: 444; ">
-        <!-- heading        -->
-        <div class="list  d-flex align-items-center  flex-column pt-1 "
-            style=" background-color:white; width:35%;height: 92vh; border-radius: 10px;margin-left: 55px; ">
+    <div class="boxes  d-flex boxes-new">
+        <!-- heading -->
+        <div class="list  d-flex align-items-center  flex-column pt-1 kits">
             <h4 class="text-center  "><img src="consumergoods.svg" class="m-3" width="50px" height="50px" alt="">kandi
                 1-click kits</h4>
-            <div class="rect d-flex   mb-3"
-                style="height: 49px; width: 460px;border-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; ;">
-                <div class="box" style="height: 49px; padding-left: 120px;font-weight: 500; ">enable you to implement,
+            <div class="rectangle-3 d-flex mb-3">
+                <div class="box3 ">enable you to implement,
                     customize and
                     share your incredible Projects in minutes
                     <div class="itemss" style="margin-left: -20px;">
@@ -554,203 +503,188 @@
                 </div>
             </div>
             <!-- python -->
-            <div class="list  d-flex  flex-column "
-                style=" width:100%;height: 100vh; border-radius: 10px;margin-right: 18px;position: relative;left: 600px; top: -65px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="list  d-flex  flex-column python">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
                         </div>
                         <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 contentt"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 480px;border-radius: 5px;">
-                    <div class="box  "
-                        style="height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;background-color: #c4c5c6;">
+                <div class="rectangle-4 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Innovation.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
+                        <div class="m-2 contentt"> How to blur
                             an
                             image in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 275px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button></div>
-
-
-
+                        style=" font-weight: 400;   padding:8px 15px; position: relative;left: 275px; border-radius: 22px;">Explore
+                        All 1-Click kits <i class="bi bi-arrow-right"></i></button></div>
             </div>
 
-
         </div>
-
     </div>
+
+
+
 
     <!-- NEXT SECTION -->
 
-
     <div class="container ">
         <div class="container text-center fs-4 ">
-            <div class="text fs-2 pb-4" style="font-weight: 600;">Explore kandi Kits across Topics</div>
+            <div class="text fs-2 pb-4 Develop">Explore kandi Kits across Topics</div>
         </div>
-        <div class="container fs-4 ms-4 " style="font-weight: 500;padding-left: 60px;">Trending Kits</div>
+
+
+        <div class="container fs-4 ms-4 kit">Trending Kits</div>
         <div class="container d-flex p-4">
             <!-- python -->
-            <div class="list  d-flex  flex-column ps-5 "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="list  d-flex  flex-column ps-5 python-box">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
                         </div>
                         <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4  ">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="background-color: #c4c5c6;height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
+                        <div class="m-2 Pythonnew"> How to blur
                             an
                             image in OpenCV <br> Python</div>
                     </div>
                 </div>
-                <!-- <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 275px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button>
-                </div> -->
-
             </div>
             <!-- python -->
-            <div class="list  d-flex  flex-column  "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="list  d-flex  flex-column python-box ">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
                         </div>
                         <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3"
                     style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
+                    <div class="box4 "
                         style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
@@ -758,15 +692,124 @@
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container fs-4 ms-4 kit">Trending Kits</div>
+        <div class="container d-flex p-4">
+            <!-- python -->
+            <div class="list  d-flex  flex-column ps-5 python-box">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4  ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+            </div>
+            <!-- python -->
+            <div class="list  d-flex  flex-column python-box ">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3"
                     style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
+                    <div class="box4 "
                         style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
                         <div class="item1 d-flex justify-content-center py-3">
                             <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
@@ -774,7 +817,7 @@
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
+                        <div class="m-2 Pythonnew"> How to blur
                             an
                             image in OpenCV <br> Python</div>
                     </div>
@@ -784,139 +827,495 @@
 
         </div>
 
-        <!-- section2 -->
-
-        <div class="container fs-4 ms-4 " style="font-weight: 500;padding-left: 60px;">1-Click Kits</div>
+        <div class="container fs-4 ms-4 kit">Trending Kits</div>
         <div class="container d-flex p-4">
             <!-- python -->
-            <div class="list  d-flex  flex-column ps-5 "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="list  d-flex  flex-column ps-5 python-box">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
                         </div>
                         <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4  ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="background-color: #c4c5c6;height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="Javanew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
+                        <div class="m-2 Pythonnew"> How to blur
                             an
                             image in OpenCV <br> Python</div>
                     </div>
                 </div>
             </div>
             <!-- python -->
-            <div class="list  d-flex  flex-column  "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+            <div class="list  d-flex  flex-column python-box ">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="ArtificialIntelligencenew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
                         </div>
                         <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="ArtificialIntelligencenew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="ArtificialIntelligencenew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
+                        <div class="m-2 Pythonnew"> How to blur an
                             image
                             in OpenCV <br> Python</div>
                     </div>
                 </div>
                 <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
+                <div class="rectangle-5 d-flex border bg-white mb-3"
                     style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
+                    <div class="box4 "
                         style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
                         <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="ArtificialIntelligencenew.svg" alt="" width="40px" height="40px"></div>
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
 
                         </div>
                     </div>
                     <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container fs-4 ms-4 kit">Trending Kits</div>
+        <div class="container d-flex p-4">
+            <!-- python -->
+            <div class="list  d-flex  flex-column ps-5 python-box">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4  ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+            </div>
+            <!-- python -->
+            <div class="list  d-flex  flex-column python-box ">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3"
+                    style="height: 64px; width: 454px;border-radius: 5px;">
+                    <div class="box4 "
+                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container fs-4 ms-4 kit">Trending Kits</div>
+        <div class="container d-flex p-4">
+            <!-- python -->
+            <div class="list  d-flex  flex-column ps-5 python-box">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4  ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Python.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+            </div>
+            <!-- python -->
+            <div class="list  d-flex  flex-column python-box ">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3"
+                    style="height: 64px; width: 454px;border-radius: 5px;">
+                    <div class="box4 "
+                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="JavaScript.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- section2 -->
+
+        <div class="container fs-4 ms-4 kit">Automatin</div>
+        <div class="container d-flex p-4">
+            <!-- python -->
+            <div class="list  d-flex  flex-column ps-5 python-box ">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Automatinnew.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python
+                        </div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Automatinnew.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 "
+                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Automatinnew.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Automatinnew.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur
+                            an
+                            image in OpenCV <br> Python</div>
+                    </div>
+                </div>
+            </div>
+            <!-- python -->
+            <div class="list  d-flex  flex-column python-box ">
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Innovation.svg" alt="" width="40px" height="40px"></div>
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Innovation.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!--  column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4 ">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Innovation.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur an
+                            image
+                            in OpenCV <br> Python</div>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="rectangle-5 d-flex border bg-white mb-3">
+                    <div class="box4">
+                        <div class="item1 d-flex justify-content-center py-3">
+                            <div class="img"><img src="Innovation.svg" alt="" width="40px" height="40px"></div>
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <div class="m-2 Pythonnew"> How to blur
                             an
                             image in OpenCV <br> Python</div>
                     </div>
@@ -929,806 +1328,77 @@
             </div>
 
         </div>
-        <!-- section2 -->
 
-        <div class="container fs-4 ms-4 " style="font-weight: 500;padding-left: 60px;">Artificial Intelligence Kits
-        </div>
-        <div class="container d-flex p-4">
-            <!-- python -->
-            <div class="list  d-flex  flex-column ps-5 "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinancialServicenew.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinancialServicenew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="background-color: #c4c5c6;height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinancialServicenew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinancialServicenew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-            </div>
-            <!-- python -->
-            <div class="list  d-flex  flex-column  "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinTech.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinTech.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinTech.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="FinTech.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 250px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- section2 -->
-
-        <div class="container fs-4 ms-4 " style="font-weight: 500;padding-left: 60px;">Gaming Kits</div>
-        <div class="container d-flex p-4">
-            <!-- python -->
-            <div class="list  d-flex  flex-column ps-5 "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="background-color: #c4c5c6;height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-            </div>
-            <!-- python -->
-            <div class="list  d-flex  flex-column  "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 250px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- section2 -->
-
-        <div class="container fs-4 ms-4 " style="font-weight: 500;padding-left: 60px;">Gaming Kits</div>
-        <div class="container d-flex p-4">
-            <!-- python -->
-            <div class="list  d-flex  flex-column ps-5 "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="background-color: #c4c5c6;height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-            </div>
-            <!-- python -->
-            <div class="list  d-flex  flex-column  "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 250px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- section2 -->
-
-        <div class="container fs-4 ms-4 " style="font-weight: 500;padding-left: 60px;">A.I Kits</div>
-        <div class="container d-flex p-4">
-            <!-- python -->
-            <div class="list  d-flex  flex-column ps-5 "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="background-color: #c4c5c6;height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-            </div>
-            <!-- python -->
-            <div class="list  d-flex  flex-column  "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 250px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- section2 -->
-
-        <div class="container fs-4 ms-4 " style="font-weight: 500;padding-left: 60px;">Java Kits</div>
-        <div class="container d-flex p-4">
-            <!-- python -->
-            <div class="list  d-flex  flex-column ps-5 "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="background-color: #c4c5c6;height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="gaming.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-            </div>
-            <!-- python -->
-            <div class="list  d-flex  flex-column  "
-                style=" width:100%;height: 60vh; border-radius: 10px;margin-right: 18px;">
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-                        </div>
-                        <!-- <div class="svg" style="position: absolute;    position: absolute; left: 245px; bottom: -690px;"><img src="solutionkit.svg" width="20px" height="20px" alt=""></div>  -->
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box  "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!--  column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;font-weight: 500;"> How to blur an
-                            image
-                            in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <!-- column -->
-                <div class="rect d-flex border bg-white mb-3"
-                    style="height: 64px; width: 454px;border-radius: 5px;">
-                    <div class="box   "
-                        style="background-color: #c4c5c6;height: 64px; width: 64px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
-                        <div class="item1 d-flex justify-content-center py-3">
-                            <div class="img"><img src="retailnew.svg" alt="" width="40px" height="40px"></div>
-
-                        </div>
-                    </div>
-                    <div class="content ">
-                        <div class="m-2" style="color:#505254; padding-left: 15px ;    font-weight: 500;"> How to blur
-                            an
-                            image in OpenCV <br> Python</div>
-                    </div>
-                </div>
-                <div class="button"><button class="btn   bg-light "
-                        style="padding:8px 15px; position: relative;left: 250px; border-radius: 22px;">Explore All
-                        1-Click kits <i class="bi bi-arrow-right"></i></button>
-                </div>
-
-            </div>
-
-        </div>
     </div>
-    
-<!-- others section -->
-    <div class="container d-flex justify-content-center align-items-center" style="width: 960px; height: 281px;">
-        <div class="container fs-5  text-center p-5   mb-5"
-            style=" border-radius: 22px; background-color:#c4c5c6; width: 893px; height: 121px;"><span
-                style="font-weight: 500;">Learn more</span> about
-            Khandi <span style="font-weight: 500;">Kits</span> and explore Solutions across <san
-                style="font-weight: 500;">500 topics</span> <i class="fa-solid fa-circle-arrow-right fa-lg p-2"
-                    style="color: #6610f2;"></i></div>
+
+    <!-- others section -->
+    <div class="container d-flex justify-content-center align-items-center sectionA">
+        <div class="container fs-5  text-center p-5   mb-5 sub-section-A"><span style="font-weight: 500;">Learn
+                more</span> about
+            Khandi <span class="Develop">Kits</span> and explore Solutions across <span class="Develop">500
+                topics</span> <i class="fa-solid fa-circle-arrow-right fa-lg p-2" style="color: #6610f2;"></i></div>
     </div>
-    <div class="container-fluid text-white d-flex align-items-center "
-        style="background-color: #260669; height: 580px;">
-        <div class="container-fluid  " style="background-color: #260669; height: 480px;">
-            <div class="container text-center  ">
+
+    <div class="container-fluid text-white d-flex align-items-center sectionB">
+        <div class="container-fluid  sub-section-B ">
+            <div class="container text-center ">
                 <h2>Stay Ahead</h2>
                 <p class="m-3"> Explore Popular,
                     Trending and Hidden Gems of Libraries and Resources <br> across 500+ Topics, Frameworks, Languages
                 </p>
+
             </div>
 
             <div class="container-fluid  ">
                 <div class="row pt-4 ">
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="Python.svg" width="40px"
-                            height="40px" alt="">python</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="JavaScript.svg" width="40px"
-                            height="40px" alt="">JavaScript</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="Javanew.svg" width="40px"
-                            height="40px" alt="">Java</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img
-                            src="ArtificialIntelligencenew.svg" width="40px" height="40px" alt="">AI</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="blockchain.svg" width="40px"
-                            height="40px" alt="">blockchain</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="IoTnew.svg" width="40px"
-                            height="40px" alt="">IOT</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="gaming.svg" width="40px"
-                            height="40px" alt="">Gaming</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="Automatinnew.svg"
-                            width="40px" height="40px" alt="">Automatin</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="consumergoods.svg"
-                            width="40px" height="40px" alt="">consumergoods</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="FinancialServicenew.svg"
-                            width="40px" height="40px" alt="">Financial</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="FinTech.svg" width="40px"
-                            height="40px" alt="">FinTech</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="healthcarenew.svg"
-                            width="40px" height="40px" alt="">Health</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="governmentnew.svg"
-                            width="40px" height="40px" alt="">Government</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="Manufacturingnew.svg"
-                            width="40px" height="40px" alt="">Manufacture</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2"
-                        style="width: 135px; height: 135px; border-radius: 5px;"><img src="retailnew.svg" width="40px"
-                            height="40px" alt="">Retail</div>
-                    <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 text-center"
-                        style="width: 135px; height: 135px; border-radius: 5px; ">Explore new things <i
-                            class="bi bi-arrow-right"></i></div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="Python.svg" width="40px" height="40px" alt="">python</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="JavaScript.svg" width="40px" height="40px" alt="">JavaScript</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="Javanew.svg" width="40px" height="40px" alt="">Java</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="ArtificialIntelligencenew.svg" width="40px" height="40px" alt="">AI</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="blockchain.svg" width="40px" height="40px" alt="">blockchain</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="IoTnew.svg" width="40px" height="40px" alt="">IOT</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="gaming.svg" width="40px" height="40px" alt="">Gaming</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="Automatinnew.svg" width="40px" height="40px" alt="">Automatin</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="consumergoods.svg" width="40px" height="40px" alt="">consumergoods</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="FinancialServicenew.svg" width="40px" height="40px" alt="">Financial</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="FinTech.svg" width="40px" height="40px" alt="">FinTech</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="healthcarenew.svg" width="40px" height="40px" alt="">Health</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="governmentnew.svg" width="40px" height="40px" alt="">Government</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="Manufacturingnew.svg" width="40px" height="40px" alt="">Manufacture</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 photo">
+                        <img src="retailnew.svg" width="40px" height="40px" alt="">Retail</div>
+                    <div
+                        class="col-lg-1 d-flex flex-column justify-content-center align-items-center bg-white text-muted m-2 text-center photo">
+                        Explore new things <i class="bi bi-arrow-right"></i></div>
 
 
                 </div>
@@ -1736,6 +1406,7 @@
             </div>
 
         </div>
+
     </div>
     <!-- semi last section -->
     <div class="text-center pt-5">
@@ -1743,16 +1414,16 @@
     </div>
     <div class="container d-flex justify-content-center align-items-center py-5">
 
-        <div class="testimonial d-flex p-2 " style=" height: 554px;">
-            <div class="card " style="width: 13rem;background-color: #c4c5c6 ">
+        <div class="testimonial d-flex p-2 " >
+            <div class="card " >
                 <img class="card-video-top" src="pxfuel (1).jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">kandi made my life much easier!</p>
                 </div>
             </div>
         </div>
-        <div class="testimonial d-flex p-2 " style=" height: 554px;">
-            <div class="card" style="width: 13rem;background-color: #c4c5c6">
+        <div class="testimonial d-flex p-2">
+            <div class="card" >
                 <img class="card-video-top" src="pxfuel (1).jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">I used kandi kit to complete my 1st project in data science. Freshers should
@@ -1760,8 +1431,8 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial d-flex p-2 " style=" height: 554px; ;">
-            <div class="card" style="width: 13rem;background-color: #c4c5c6">
+        <div class="testimonial d-flex p-2 ">
+            <div class="card" >
                 <img class="card-video-top" src="pxfuel (1).jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">You don’t have to go through different websites for different libraries, you
@@ -1772,14 +1443,15 @@
     </div>
 
     <!-- signup section -->
-    <div class="signup " style="padding-top:30px ;">
-        <div class="container  text-center  p-5 w-75   mb-5 fs-2 "
-            style="border-radius: 22px; background-color: #c4c5c6;font-weight: 500;">Signup Now
+    <div class="signup">
+        <div class="container  text-center  p-5 w-75   mb-5 fs-2 sub-signup"
+            >Signup Now
             <div class="text-center fs-6 text-dark">Its FREE and takes only seconds</div>
             <div class="images"><img src="google.svg" alt=""><img src="5296499_fb_facebook_facebook logo_icon.svg"
-                    width="35px" height="35px" style="margin-left:22px; margin-bottom: 7px;" alt=""><i
+                    width="35px" height="35px"  alt=""><i
                     class="bi bi-github" style="margin-left: 22px;"></i><i class="bi bi-envelope-fill"
-                    style="margin-left: 22px;"></i></div>
+                    style="margin-left: 22px;"></i>
+            </div>
         </div>
     </div>
     </div>
@@ -1788,13 +1460,13 @@
     <div class="footer">
         <div class="   p-5   bg-light ">
             <h4 class="text-center"> Open Weaver – Develop Applications Faster with Open Source</h4>
-            <div class="head" style="position: relative; right: -48px;">
+            <div class="head" >
                 <div class="container  ">
                     <div class="row pt-5  ">
-                        <div class="col-lg-3  fs-5 pe-2" style="padding-left: 31px; font-weight: 500;"> Khandi </div>
-                        <div class="col-lg-3 fs-5" style="padding-left: 20px; font-weight: 500;"> Community </div>
-                        <div class="col-lg-3 fs-5" style="font-weight: 500;"> Company </div>
-                        <div class="col-lg-3 fs-5" style="font-weight: 500;"> Follow </div>
+                        <div class="col-lg-3  fs-5 pe-2  open"> Khandi </div>
+                        <div class="col-lg-3 fs-5  community"> Community </div>
+                        <div class="col-lg-3 fs-5 Develop"> Company </div>
+                        <div class="col-lg-3 fs-5 Develop"> Follow </div>
                     </div>
                 </div>
                 <div class="container ">
@@ -1806,12 +1478,16 @@
                                 class="bi bi-instagram p-2"></i><i class="bi bi-facebook p-2"></i><i
                                 class="bi bi-messenger p-2"></i> </div>
                     </div>
+
                 </div>
                 <div class="container ">
                     <div class="row  m-2 fw-normal">
-                        <div class="col-lg-3 hover-effect fs-6"> Develop Custom Functions </div>
-                        <div class="col-lg-3 hover-effect fs-6"> Develop Projects with Kits </div>
-                        <div class="col-lg-3 hover-effect fs-6"> Contact us </div>
+                        <div class="col-lg-3 hover-effect fs-6"> Develop Custom Functions
+                        </div>
+                        <div class="col-lg-3 hover-effect fs-6"> Develop Projects with Kits
+                        </div>
+                        <div class="col-lg-3 hover-effect fs-6"> Contact us
+                        </div>
                     </div>
                 </div>
                 <div class="container ">
@@ -1823,23 +1499,31 @@
                 </div>
                 <div class="container ">
                     <div class="row  m-2 fw-normal">
-                        <div class="col-lg-3 hover-effect fs-6"> Explore Popular Libraries </div>
-                        <div class="col-lg-3 hover-effect fs-6"> FutureSkills Prime </div>
+                        <div class="col-lg-3 hover-effect fs-6"> Explore Popular Libraries
+                        </div>
+                        <div class="col-lg-3 hover-effect fs-6"> FutureSkills Prime
+                        </div>
                     </div>
                 </div>
                 <div class="container ">
                     <div class="row  m-2 fw-normal">
-                        <div class="col-lg-3 hover-effect fs-6"> Product Tour </div>
-                        <div class="col-lg-3 hover-effect fs-6"> kandi Support </div>
+                        <div class="col-lg-3 hover-effect fs-6"> Product Tour
+
+                        </div>
+                        <div class="col-lg-3 hover-effect fs-6"> kandi Support
+
+                        </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="container">
                 <div class="  pt-5 fw-normal d-flex justify-content-center">
                     <div class=" item1 hover-effect   fs-6" style="position: relative;left: -50px;">Terms</div>
                     <div class=" item2 hover-effect  fs-6" style="position: relative; ;">Privacy policy</div>
-                    <div class=" item3 hover-effect fs-6" style="position: relative; right: -57px;">© 2023 Open Weaver Inc.</div>
+                    <div class=" item3 hover-effect fs-6" style="position: relative; right: -57px;">© 2023 Open Weaver
+                        Inc.
+                    </div>
                 </div>
             </div>
         </div>
